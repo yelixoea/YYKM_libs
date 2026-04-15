@@ -31,3 +31,8 @@ AV3AD_ANDROID_PLATFORM="${AV3AD_ANDROID_PLATFORM:-android-21}"
 TERMUX_EXEC_GIT_URL="${TERMUX_EXEC_GIT_URL:-https://github.com/yelixoea/termux-exec.git}"
 TERMUX_EXEC_GIT_BRANCH="${TERMUX_EXEC_GIT_BRANCH:-main}"
 TERMUX_EXEC_ANDROID_ABIS="${TERMUX_EXEC_ANDROID_ABIS:-arm64-v8a armeabi-v7a x86 x86_64}"
+
+PROOT_GIT_URL="${PROOT_GIT_URL:-https://github.com/yelixoea/proot.git}"
+PROOT_GIT_BRANCH="${PROOT_GIT_BRANCH:-master}"
+
+TALLOC_GZ_URL="${TALLOC_GZ_URL:-https://download.samba.org/pub/talloc/talloc-2.4.4.tar.gz}"

@@ -50,6 +50,7 @@ chmod +x gradlew
 ./gradlew --no-daemon :lib-decoder-ffmpeg:assembleRelease
 
 echo "$PREFIX Collect AAR..."
+rm -rf "$OUT"
 mkdir -p "$OUT"
 
 AAR=$(find "$MODULE_DIR/buildout/outputs/aar" -name "*release*.aar" | sort | tail -n1)

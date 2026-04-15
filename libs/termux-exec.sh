@@ -37,9 +37,10 @@ else
 fi
 
 echo "$PREFIX Build .so..."
+rm -rf "$OUT"
 mkdir -p "$OUT"
 
-for ABI in $ABIS"; do
+for ABI in $ABIS; do
 	CC_NAME="$(compiler_for_abi "$ABI")"
 	CC="$ANDROID_TOOLCHAIN_BIN/$CC_NAME"
 
@@ -55,3 +56,4 @@ done
 
 echo "$PREFIX Done:"
 echo "  SO -> $OUT/{arm64-v8a,armeabi-v7a,x86,x86_64}/libtermux-exec.so"
+tar -czf "$DIST_DIR/termux-exec.tar.gz" -C "$DIST_DIR" termux-exec

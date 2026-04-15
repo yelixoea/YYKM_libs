@@ -24,6 +24,10 @@ case "$LIB" in
   termux-exec)
     source "$ROOT_DIR/libs/termux-exec.sh"
     ;;
+  proot)
+    source "$ROOT_DIR/libs/talloc.sh"
+    source "$ROOT_DIR/libs/proot.sh"
+    ;;
   *)
     echo "Unknown library: $LIB"
     exit 1

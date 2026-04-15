@@ -37,6 +37,7 @@ else
 fi
 
 echo "$PREFIX Build..."
+rm -rf "$OUT"
 mkdir -p "$OUT"
 
 for ABI in $ABIS; do

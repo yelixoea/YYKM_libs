@@ -23,6 +23,7 @@ chmod +x gradlew
 ./gradlew --no-daemon :mmkv:assembleStaticCppRelease
 
 echo "$PREFIX Collect AAR..."
+rm -rf "$OUT"
 mkdir -p "$OUT"
 
 AAR=$(find "$ANDROID_PROJ/mmkv/build/outputs/aar" -name "*.aar" | sort | tail -n1)
